@@ -20,6 +20,12 @@ struct TapGestureView: View {
             .fill(self.tapped ? Color.blue : Color.red)
             .frame(width: 100, height: 100, alignment: .center)
             .gesture(tap)
+            .onAppear {
+                
+            }
+            .onDisappear {
+                
+            }
     }
 }
 

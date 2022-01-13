@@ -10,7 +10,7 @@ import SwiftUI
 struct SpecialistDetailView: View {
     var item: DrugSpecialistModel
     var body: some View {
-        Text(item.specialtyTypeName ?? "")
+        Text("\(item.specialtyTypeName ?? "") \(item.id ?? "")")
     }
 }
 

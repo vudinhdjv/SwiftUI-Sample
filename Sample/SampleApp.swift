@@ -14,7 +14,7 @@ struct SampleApp: App {
     
     var body: some Scene {
         WindowGroup {
-            EnvironmentView().environmentObject(userDetails)
+            HomeSample().environmentObject(userDetails)
         }
     }
 }

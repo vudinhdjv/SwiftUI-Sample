@@ -18,8 +18,7 @@ struct DrView: View {
                     ProgressView()
                 } else {
                     List(presenter.items, id: \.id) { item in
-                        NavigationLink(
-                            destination: SpecialistDetailView(item: item)) {
+                        NavigationLink(destination: SpecialistDetailView(item: item)) {
                                 SpecialistCell(item: item)
                             }
                     }

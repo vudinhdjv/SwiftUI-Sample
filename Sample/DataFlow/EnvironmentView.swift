@@ -59,7 +59,15 @@ struct BEnvironmentDetail2View: View {
             Text("Age Detail: \(userDetails.age)")
                 .font(.title)
             Button {
-                userDetails.age += 1
+//                let serialQueue = DispatchQueue(label: "swiftlee.serial.queue", attributes: .concurrent)
+//
+//                serialQueue.async {
+                    userDetails.age = 10
+//                }
+//                serialQueue.async {
+//                    userDetails.age = 15
+//                }
+                
             } label: {
                 Text("Tap me")
             }

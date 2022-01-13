@@ -24,5 +24,6 @@ struct SampleColorPickerView: View {
 struct SampleColorPickerView_Previews: PreviewProvider {
     static var previews: some View {
         SampleColorPickerView()
+            .environment(\.locale, .init(identifier: "ja"))
     }
 }
