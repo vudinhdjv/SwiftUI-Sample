@@ -1,0 +1,10 @@
+app_identifier("hj.live.app") # The bundle identifier of your app
+apple_id("nguyendat.darren@gmail.com") # Your Apple email address
+
+itc_team_id("123280994") # App Store Connect Team ID
+team_id("GW9Q5Y27Y2") # Developer Portal Team ID
+itc_team_id("123280994") # App Store Connect Team ID
+team_id("GW9Q5Y27Y2") # Developer Portal Team ID
+
+# For more information about the Appfile, see:
+#     https://docs.fastlane.tools/advanced/#appfile
