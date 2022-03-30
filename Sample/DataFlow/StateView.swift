@@ -23,7 +23,7 @@ struct StateView: View {
     
     var body: some View {
         VStack {
-            Text("Count \(count)")
+            Text("1Count \(count)")
                 .font(.title)
             Text("Age \(profile.age)")
             if profile.isVisible {
