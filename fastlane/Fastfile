@@ -48,6 +48,6 @@ platform :ios do
       scheme: "Sample",
       output_directory: "ipa"
     )
-    upload_to_testflight
+    #upload_to_testflight
   end
 end
