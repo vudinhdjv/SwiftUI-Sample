@@ -14,8 +14,6 @@
 		3114C2F82726AFEA00C5C822 /* NotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3114C2F62726AFEA00C5C822 /* NotificationVC.swift */; };
 		3114C2F92726AFEA00C5C822 /* NotificationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3114C2F72726AFEA00C5C822 /* NotificationVC.xib */; };
 		311F52AF2770D0A800187140 /* SceneStorageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311F52AE2770D0A700187140 /* SceneStorageView.swift */; };
-		313CF8BD278447A400B2D1A9 /* Alamofire.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 313CF8BC278447A400B2D1A9 /* Alamofire.xcframework */; };
-		313CF8BE278447A400B2D1A9 /* Alamofire.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 313CF8BC278447A400B2D1A9 /* Alamofire.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		313DF84F274F95F80032BBA2 /* FileItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313DF84E274F95F80032BBA2 /* FileItem.swift */; };
 		313DF851274F96F80032BBA2 /* OutlineGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313DF850274F96F80032BBA2 /* OutlineGroupView.swift */; };
 		313DF853274F9E210032BBA2 /* LinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313DF852274F9E210032BBA2 /* LinkView.swift */; };
@@ -129,6 +127,8 @@
 		31E92974272AF87300102C1D /* DrView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E92973272AF87300102C1D /* DrView.swift */; };
 		31ECC360272E6530007F3F5A /* LanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31ECC35F272E6530007F3F5A /* LanguageView.swift */; };
 		31ECC364272E65C0007F3F5A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 31ECC366272E65C0007F3F5A /* Localizable.strings */; };
+		31EE0CDB27BBB0D300D5F8AE /* Alamofire.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 313CF8BC278447A400B2D1A9 /* Alamofire.xcframework */; };
+		31EE0CDC27BBB0D300D5F8AE /* Alamofire.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 313CF8BC278447A400B2D1A9 /* Alamofire.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		31FCA6802732318E00E1A5AD /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FCA67F2732318E00E1A5AD /* TextView.swift */; };
 		31FCA682273233D000E1A5AD /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FCA681273233D000E1A5AD /* ImageView.swift */; };
 		31FCA684273238F300E1A5AD /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FCA683273238F300E1A5AD /* ItemView.swift */; };
@@ -159,17 +159,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		313CF8BF278447A400B2D1A9 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				313CF8BE278447A400B2D1A9 /* Alamofire.xcframework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		318DA87D27523266005D0F7F /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -179,6 +168,17 @@
 				318DA87927523266005D0F7F /* SampleDRExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31EE0CDD27BBB0D300D5F8AE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				31EE0CDC27BBB0D300D5F8AE /* Alamofire.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -392,7 +392,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				313CF8BD278447A400B2D1A9 /* Alamofire.xcframework in Frameworks */,
+				31EE0CDB27BBB0D300D5F8AE /* Alamofire.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -951,7 +951,7 @@
 				315DA53C2725B8E100AF9194 /* Frameworks */,
 				315DA53D2725B8E100AF9194 /* Resources */,
 				318DA87D27523266005D0F7F /* Embed App Extensions */,
-				313CF8BF278447A400B2D1A9 /* Embed Frameworks */,
+				31EE0CDD27BBB0D300D5F8AE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

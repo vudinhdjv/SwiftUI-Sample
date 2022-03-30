@@ -11,6 +11,8 @@ struct LanguageView: View {
     var body: some View {
         VStack {
             Text("Username")
+                .padding()
+                .background(Color.red)
             Text("Password")
         }
     }

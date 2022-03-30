@@ -10,11 +10,10 @@ class User {
     }
 }
 
-let user = User(name: "Nam", age: 18)
+let user = User(name: "Thanh", age: 18)
 
 user.$name.sink {
     print($0)
 }
 
-user.name = "Thanh"
 user.name = "Dat"

@@ -3,9 +3,8 @@ import Combine
 
 var subscriptions = Set<AnyCancellable>()
 
-let publisher = ["A", "B", "C"].publisher
+let publisher = ["A"].publisher
 publisher
-    .print("publisher")
     .count()
-    .sink(receiveValue: { print("I have \($0) items") })
+    .sink(receiveValue: { print($0)})
     .store(in: &subscriptions)

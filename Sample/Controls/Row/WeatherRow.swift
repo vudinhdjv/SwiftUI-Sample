@@ -37,5 +37,6 @@ struct WeatherRow: View {
 struct WeatherRow_Previews: PreviewProvider {
     static var previews: some View {
         WeatherRow(weather: Weather(city: "Hà Nội", country: "Việt Nam", temperature: 30, status: .sun))
+            .previewLayout(.sizeThatFits)
     }
 }

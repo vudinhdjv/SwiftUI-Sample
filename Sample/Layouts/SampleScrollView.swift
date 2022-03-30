@@ -29,7 +29,7 @@ struct SampleScrollView2: View {
     var body: some View {
         ScrollView(.horizontal) {
             HStack {
-                ForEach(0..<10) {_ in
+                ForEach(0..<1000000) {_ in
                     ProfileView()
                 }
             }

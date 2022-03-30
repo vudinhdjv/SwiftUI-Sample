@@ -10,4 +10,5 @@ func performAsyncActionAsFuture() -> Future <Void, Never> {
 }
 
 let cancellable = performAsyncActionAsFuture()
+
     .sink() {_ in print("Future succeeded.")}

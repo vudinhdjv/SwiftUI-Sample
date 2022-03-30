@@ -23,7 +23,7 @@ struct SampleHStackView: View {
 struct SampleHStackView_Previews: PreviewProvider {
     static var previews: some View {
         SampleHStackView()
-            .previewLayout(.device)
+            .previewLayout(.sizeThatFits)
             
     }
 }
