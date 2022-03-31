@@ -2,14 +2,14 @@ name: Xcode - Build and Analyze
 
 on:
   push:
-    branches: [ main ]
+    branches: [ jenkins ]
   pull_request:
-    branches: [ main ]
+    branches: [ jenkins ]
 
 jobs:
   build:
     name: Build and analyse default scheme using xcodebuild command
-    runs-on: macos-latest
+    runs-on: self-hosted
 
     steps:
       - name: Checkout
